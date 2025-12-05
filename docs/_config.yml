@@ -1,8 +1,0 @@
-markdown: GFM
-kramdown:
-  input: GFM
-
-plugins:
-  - jekyll-remote-theme
-
-remote_theme: pages-themes/minimal@v0.2.0
