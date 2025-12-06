@@ -6,7 +6,6 @@ Este documento describe la arquitectura general de Melodía, sus microservicios,
 
 ## 📡 Diagrama de Arquitectura
 
-![Arquitectura del Sistema](/assets/arquitectura.png)
 
 ---
 
