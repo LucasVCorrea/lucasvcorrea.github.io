@@ -4,9 +4,101 @@ Este documento describe la arquitectura general de Melodía, sus microservicios,
 
 ---
 
-## 📡 Diagrama de Arquitectura
+## 📡 Diagramas de Arquitectura
 
-![Arquitectura del Sistema](/assets/arquitectura.png)
+A continuación se muestra un carrusel de diagramas que representan diferentes vistas de la arquitectura del sistema.  
+Podés recorrerlos usando los indicadores inferiores.
+
+<div class="carousel-container">
+  <div class="carousel">
+
+    <!-- Slide 1 -->
+    <input type="radio" name="slides" id="slide-1" checked>
+    <label for="slide-1" class="carousel__nav"></label>
+    <figure>
+      <img src="/assets/arquitectura.png" />
+      <figcaption>Arquitectura General del Sistema</figcaption>
+    </figure>
+
+    <!-- Slide 2 -->
+    <input type="radio" name="slides" id="slide-2">
+    <label for="slide-2" class="carousel__nav"></label>
+    <figure>
+      <img src="/assets/diagrama-flujo-playlist.png" />
+      <figcaption>Flujo: Creación de Playlists</figcaption>
+    </figure>
+
+    <!-- Slide 3 -->
+    <input type="radio" name="slides" id="slide-3">
+    <label for="slide-3" class="carousel__nav"></label>
+    <figure>
+      <img src="/assets/microservicios.png" />
+      <figcaption>Distribución de Microservicios</figcaption>
+    </figure>
+
+  </div>
+</div>
+
+<style>
+.carousel-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-bottom: 40px;
+}
+
+.carousel input {
+  display: none;
+}
+
+.carousel figure {
+  display: none;
+  margin: 0;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.carousel figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 6px;
+}
+
+#slide-1:checked ~ figure:nth-of-type(1),
+#slide-2:checked ~ figure:nth-of-type(2),
+#slide-3:checked ~ figure:nth-of-type(3) {
+  display: block;
+}
+
+.carousel__nav {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 8px 4px;
+  background: #ccc;
+  cursor: pointer;
+  position: relative;
+  top: -12px;
+}
+
+input#slide-1:checked ~ label[for="slide-1"],
+input#slide-2:checked ~ label[for="slide-2"],
+input#slide-3:checked ~ label[for="slide-3"] {
+  background: #4a90e2;
+}
+</style>
 
 ---
 
@@ -34,73 +126,69 @@ Melodía no es un monolito, sino un ecosistema modular compuesto por servicios i
 
 ### ¿Por qué microservicios?
 
-- El equipo era multidisciplinario → se podían desarrollar módulos en paralelo.  
-- Escalabilidad independiente: el servicio de música genera mucha más carga que auth.  
-- Facilidad de reemplazo: cada servicio puede migrar tecnología sin afectar a los demás.  
-- Entornos aislados → errores en un servicio no rompen todo el sistema.
+- El equipo podía trabajar en paralelo.  
+- Escalabilidad independiente.  
+- Flexibilidad tecnológica por servicio.  
+- Aislamiento de errores.
 
 ---
 
 ## 2. **Elección de Tecnologías**
 
 ### **Java + Spring Boot para Autenticación**
-- Robustez para validación de tokens y sesiones.  
-- Integración madura con JWT y seguridad.  
-- Ideal para lógica crítica que debe ser estable.
+- Robustez para validación de tokens.
+- Integración madura con JWT.
+- Ideal para lógica crítica.
 
 ### **Node + NestJS para la mayoría de los servicios**
-- NestJS ofrece arquitectura modular, escalable y muy rápida de desarrollar.  
-- DX excelente → CLI, decoradores, inyección de dependencias.  
-- Los servicios podían ser trabajados por varios desarrolladores al mismo tiempo.
+- Arquitectura modular.
+- DX excelente.
+- Curva de aprendizaje rápida para el equipo.
 
 ### **MongoDB para música / metadatos**
-- Las canciones y álbumes son documentos naturalmente jerárquicos.  
-- Lecturas rápidas y flexibilidad en esquemas.
+- Ideal para documentos jerárquicos.
+- Lecturas rápidas.
 
 ### **PostgreSQL para usuarios**
-- Datos estructurados + relaciones (seguidores, perfiles, settings).  
-- Integridad referencial.
+- Integridad y relaciones.
 
-### **Firebase Storage para audio**
-- Hosting barato y escalable.  
-- SDK simple desde frontend y backend.  
-- No se quería manejar buckets directamente desde un servidor propio.
+### **Firebase Storage**
+- Hosting escalable y económico.
+- Ideal para manejo de multimedia.
 
 ---
 
 ## 3. **BFF como puerta de entrada**
 
-El BFF simplifica al frontend:
+Ventajas:
 
-- Valida el token en un solo lugar.  
-- Unifica rutas de todos los microservicios.  
-- Permite enriquecer respuestas (por ejemplo: metadata + artista).  
-- Evita que el frontend conozca múltiples endpoints.
+- Centraliza validación de tokens.
+- Unifica los endpoints para frontend.
+- Permite enriquecer respuestas.
+- Oculta complejidad interna.
 
 ---
 
 ## 4. **CI/CD & Contenedores**
 
-Se eligió:
-
-- **Docker** para hacer cada servicio portable.  
-- **GitHub Actions** para correr tests, compilar, pushear imágenes.  
-- **Codecov** para métricas de calidad del código.
+- **Docker** para portabilidad.
+- **GitHub Actions** para automatización.
+- **Codecov** para calidad de código.
 
 ---
 
-## 5. **Modelo orientado a eventos (Event Bus)**
+## 5. **Modelo orientado a eventos (Diseñado, no implementado)**
 
-Aunque no se implementó por completo, el diseño lo contempla:
-
-- Publicar eventos: música subida, usuario registrado, playlist creada.  
-- Consumir eventos: estadísticas, notificaciones, recomendaciones.  
-- Escalabilidad reactiva → no bloquea otros servicios.
+- Eventos clave: playlist creada, usuario registrado, música subida.
+- Facilita estadísticas y recomendaciones.
+- Aísla lógicas entre servicios.
 
 ---
 
 ## 6. **Frontends independientes**
 
 - Web App (React)
-- Mobile App (React Native)
+- Mobile (React Native)
 - Backoffice (React)
+
+---
