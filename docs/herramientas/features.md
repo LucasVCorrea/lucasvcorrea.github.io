@@ -1,26 +1,22 @@
-# 🌟 Features Destacadas
-
+---
+layout: tool
+title: Plataforma de Monitoreo Operativo
+subtitle: Supervisión integral del desempeño de auditores
 ---
 
-## 🎧 Reproductor Completo
-Con cola de reproducción, historial, controles gestuales y transición fluida.
+## Descripción
 
-## 🔍 Búsqueda Unificada
-Un solo endpoint que mezcla:
-- artistas
-- álbumes
-- canciones
-- playlists
-- usuarios
+Dashboard diseñado para medir productividad, eficiencia y cumplimiento
+de estándares operativos en la revisión de material audiovisual.
 
-## 🚀 Subida de Canciones
-Upload a Firebase Storage + metadata en MongoDB.
+## Métricas principales
 
-## 📊 Métricas Avanzadas
-Top artistas, top canciones, ranking diario, historial por usuario.
+- Videos procesados
+- Horas efectivas trabajadas
+- Videos por minuto
+- Comparación interindividual
+- Segmentación por municipio
 
-## 🧵 Feed Social
-Compartir canciones, playlists, actividad, lanzamientos y colaboraciones.
+## Visualización del sistema
 
-## 🛠️ Backoffice Administrativo
-Con paginación, filtros, métricas y gestión del ecosistema.
+![Vista general](/assets/img/monitoreo-dashboard.png)
