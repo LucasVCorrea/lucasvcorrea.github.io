@@ -5,36 +5,64 @@ title: Herramientas
 
 # Herramientas Tecnológicas
 
-A continuación se detallan las plataformas desarrolladas internamente para la gestión integral del sistema.
+A continuación se detallan las plataformas desarrolladas internamente por el equipo de Soporte y Desarrollo para la gestión integral del sistema.
 
 ---
 
-## 📊 Plataforma de Monitoreo Operativo
+<div class="tool-block">
+  <h2>
+    <span class="material-symbols-outlined">analytics</span>
+    T.E.S.S.A
+  </h2>
 
-Supervisión del desempeño de auditores y seguimiento por cliente.
+  <p>
+    Dashboard dedicado para la supervisión diaria del desempeño de auditores y seguimiento por cliente.
+  </p>
 
-[Ver detalle →](/herramientas/monitoreo-operativo)
-
----
-
-## 📈 Plataforma de Seguimiento Recaudatorio y Judicial
-
-Control integral de actividad administrativa y judicial.
-
-[Ver detalle →](/herramientas/recaudatorio-judicial)
-
----
-
-## 📦 Sistema de Seguimiento de Notificadores
-
-Trazabilidad y control de actividad territorial.
-
-[Ver detalle →](/herramientas/notificadores)
+  <a class="tool-link" href="/herramientas/monitoreo-operativo">Ver detalle →</a>
+</div>
 
 ---
 
-## ⚖ Dashboard de Juicios en Situación de Apremio
+<div class="tool-block">
+  <h2>
+    <span class="material-symbols-outlined">monitoring</span>
+    Dashboard de actividad para cliente: Berisso
+  </h2>
 
-Monitoreo de causas judiciales en instancia avanzada.
+  <p>
+    Dashboard dedicado al seguimiento de actividad recaudatoria, administrativa y judicial.
+  </p>
 
-[Ver detalle →](/herramientas/apremios)
+  <a class="tool-link" href="/herramientas/recaudatorio-judicial">Ver detalle →</a>
+</div>
+
+---
+
+<div class="tool-block">
+  <h2>
+    <span class="material-symbols-outlined">assignment_turned_in</span>
+    S.I.G.A.E
+  </h2>
+
+  <p>
+    Sistema de Seguimiento de Notificaciones y control de actividad por Notificador contratado.
+  </p>
+
+  <a class="tool-link" href="/herramientas/notificadores">Ver detalle →</a>
+</div>
+
+---
+
+<div class="tool-block">
+  <h2>
+    <span class="material-symbols-outlined">gavel</span>
+    Dashboard de Juicios en Situación de Apremio
+  </h2>
+
+  <p>
+    Monitoreo de causas judiciales en instancia avanzada.
+  </p>
+
+  <a class="tool-link" href="/herramientas/apremios">Ver detalle →</a>
+</div>
