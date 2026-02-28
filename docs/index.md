@@ -5,9 +5,9 @@ title: Inicio
 
 # Gestión Integral de Infracciones de Tránsito
 
-Nuestra empresa se especializa en el análisis, validación y seguimiento de infracciones detectadas mediante sistemas de videovigilancia urbana.
+Nuestra equipo se especializa en el análisis, validación y seguimiento de infracciones detectadas mediante sistemas de videovigilancia urbana.
 
-A través de un equipo de auditores capacitados y herramientas tecnológicas desarrolladas internamente, garantizamos eficiencia operativa, trazabilidad y control integral del proceso administrativo y judicial.
+A través de un equipo de auditores capacitados, garantizamos eficiencia operativa, trazabilidad y control integral del proceso administrativo
 
 ---
 
