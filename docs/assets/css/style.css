@@ -12,61 +12,7 @@ body {
 
 .main-header {
   background-color: #1f2d3d;
-  color: white;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.main-nav {
-  background-color: #16202b;
-  padding: 15px 0;
-}
-
-.main-nav a {
-  color: white;
-  margin-right: 25px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.main-nav a:hover {
-  text-decoration: underline;
-}
-
-.content {
-  padding: 40px 0;
-}
-
-.tool-header {
-  margin-bottom: 30px;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 15px;
-}
-
-.tool-header h2 {
-  margin: 0;
-}
-
-.subtitle {
-  color: #6c7a89;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-top: 20px;
-}
-
-.main-footer {
-  background-color: #1f2d3d;
-  color: white;
-  text-align: center;
   padding: 20px 0;
-  margin-top: 60px;
-}
-.main-nav {
-  background-color: #1f2d3d;
-  padding: 15px 0;
 }
 
 .nav-container {
@@ -85,10 +31,28 @@ img {
 .nav-links a {
   color: white;
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 30px;
   font-weight: 500;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
+}
+
+.content {
+  padding: 50px 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.main-footer {
+  background-color: #1f2d3d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
 }
