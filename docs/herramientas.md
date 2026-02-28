@@ -19,7 +19,7 @@ A continuación se detallan las plataformas desarrolladas internamente por el eq
     Dashboard dedicado para la supervisión diaria del desempeño de auditores y seguimiento por cliente.
   </p>
 
-  <a class="tool-link" href="/herramientas/monitoreo-operativo">Ver detalle →</a>
+  <a class="tool-link" href="/herramientas/tessa">Ver detalle →</a>
 </div>
 
 ---
