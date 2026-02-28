@@ -56,3 +56,22 @@ img {
   padding: 20px 0;
   margin-top: 60px;
 }
+
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+}
+
+.material-symbols-outlined {
+  font-size: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.nav-links a:hover {
+  opacity: 0.85;
+}
