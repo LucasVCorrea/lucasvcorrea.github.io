@@ -1,3 +1,7 @@
+/* ============================= */
+/* RESET Y BASE */
+/* ============================= */
+
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -9,6 +13,20 @@ body {
   width: 85%;
   margin: auto;
 }
+
+.content {
+  padding: 50px 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
 
 .main-header {
   background-color: #206040;
@@ -28,26 +46,33 @@ body {
   font-size: 18px;
 }
 
+/* NAV LINKS */
+
 .nav-links a {
+  display: inline-flex;
+  align-items: center;
   color: white;
   text-decoration: none;
   margin-left: 30px;
   font-weight: 500;
+  transition: opacity 0.2s ease;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  opacity: 0.85;
 }
 
-.content {
-  padding: 50px 0;
+/* ICONOS NAV */
+
+.material-symbols-outlined {
+  font-size: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
 }
 
-img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-top: 20px;
-}
+/* ============================= */
+/* FOOTER */
+/* ============================= */
 
 .main-footer {
   background-color: #206040;
@@ -57,21 +82,63 @@ img {
   margin-top: 60px;
 }
 
-.nav-links a {
-  display: inline-flex;
+/* ============================= */
+/* SECCIÓN HERRAMIENTAS */
+/* ============================= */
+
+.tool-block {
+  margin-bottom: 50px;
+}
+
+.tool-block h2 {
+  font-size: 28px;
+  font-weight: 600;
+  display: flex;
   align-items: center;
-  color: white;
-  text-decoration: none;
-  margin-left: 30px;
+  color: #206040;
+  margin-bottom: 10px;
+}
+
+.tool-block h2 .material-symbols-outlined {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.tool-block p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.tool-link {
+  display: inline-block;
+  margin-top: 10px;
   font-weight: 500;
+  text-decoration: none;
+  color: #206040;
+  transition: opacity 0.2s ease;
 }
 
-.material-symbols-outlined {
-  font-size: 20px;
-  margin-right: 6px;
-  vertical-align: middle;
+.tool-link:hover {
+  opacity: 0.8;
 }
 
-.nav-links a:hover {
-  opacity: 0.85;
+/* ============================= */
+/* TÍTULOS GENERALES */
+/* ============================= */
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1f3d2b;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #d9e2dc;
+  margin: 40px 0;
 }
