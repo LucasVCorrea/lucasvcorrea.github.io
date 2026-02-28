@@ -44,7 +44,7 @@ body {
 }
 
 .logo img {
-  height: 26px;      /* Tamaño real visible */
+  height: 32px;      /* Tamaño real visible */
   width: auto;
   display: block;
   margin: 0;         /* MUY IMPORTANTE */
