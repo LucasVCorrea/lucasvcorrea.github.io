@@ -15,11 +15,22 @@
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
 
-    <nav class="nav-links">
-      <a href="{{ '/' | relative_url }}">Inicio</a>
-      <a href="{{ '/herramientas' | relative_url }}">Herramientas</a>
-      <a href="{{ '/proyectos' | relative_url }}">Proyectos en Curso</a>
-    </nav>
+<nav class="nav-links">
+  <a href="{{ '/' | relative_url }}">
+    <span class="material-symbols-outlined">home</span>
+    Inicio
+  </a>
+
+  <a href="{{ '/herramientas' | relative_url }}">
+    <span class="material-symbols-outlined">dashboard</span>
+    Herramientas
+  </a>
+
+  <a href="{{ '/proyectos' | relative_url }}">
+    <span class="material-symbols-outlined">construction</span>
+    Proyectos en Curso
+  </a>
+</nav>
 
   </div>
 </header>
