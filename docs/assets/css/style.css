@@ -33,17 +33,29 @@ img {
   padding: 20px 0;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .logo a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   color: white;
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
+}
+
+.logo img {
+  height: 40px;       /* Ajustable */
+  width: auto;
+  display: block;
+}
+
+.logo-text {
+  display: inline-block;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* NAV LINKS */
