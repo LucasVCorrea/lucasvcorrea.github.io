@@ -1,82 +1,98 @@
-# Melodía — Bitácora Final del Proyecto
+---
+layout: default
+title: Inicio
+---
 
-Bienvenidos a la bitácora final del proyecto **Melodía**, una plataforma musical modular construida bajo un esquema de microservicios, con frontend móvil, frontend web, backoffice administrativo y servicios backend independientes.
+# Gestión Integral de Infracciones de Tránsito
 
-Este sitio documenta las decisiones técnicas, arquitectura, problemas encontrados, mejoras pendientes y conclusiones del proyecto.
+Nuestra empresa se especializa en el análisis, validación y seguimiento de infracciones de tránsito detectadas mediante sistemas de videovigilancia.
+
+A través de un equipo de auditores capacitados y herramientas tecnológicas desarrolladas internamente, garantizamos control operativo, trazabilidad y eficiencia en cada etapa del proceso administrativo y judicial.
 
 ---
 
-## 📌 Contenidos
+## ¿Qué hacemos?
 
-- [Arquitectura del Sistema](arquitectura.md)
-- [Decisiones Técnicas](decisiones.md)
-- [Problemas y Lecciones Aprendidas](problemas.md)
-- [Funcionalidades Incompletas / Mejoras Pendientes](incompletas.md)
-- [Features Destacadas](features.md)
+El proceso operativo comprende:
 
----
+1. Captación del evento por sistemas de cámaras.
+2. Revisión y validación técnica por auditores especializados.
+3. Generación del acta correspondiente.
+4. Seguimiento administrativo, recaudatorio y judicial.
 
-## 🧩 Descripción General del Proyecto
-
-Melodía es una plataforma musical completa con:
-
-- Aplicación móvil (React Native / Expo)
-- Web App para usuarios
-- Backoffice administrativo
-- Microservicios independientes:
-  - **melody-auth** (Java + Spring Boot) — Autenticación centralizada
-  - **music-manager** (Node/NestJS) — Gestión de canciones, álbumes, géneros y uploads
-  - **users-manager** (Node/NestJS) — Usuarios, perfiles, conexiones sociales
-  - **BFF** (Node/NestJS) — Puerta de entrada unificada
-- Persistencia:
-  - **MongoDB** para canciones y playlists
-  - **Postgres** para usuarios
-  - **Firebase Storage** para archivos de audio
-
-Cada servicio está contenerizado vía Docker, con pipeline CI/CD vía GitHub Actions y análisis de cobertura con Codecov.
+Nuestro enfoque combina capital humano y desarrollo tecnológico propio para asegurar estándares homogéneos de desempeño y control.
 
 ---
 
-## 👥 Equipo y Responsabilidades
+## Herramientas Tecnológicas
 
-### **Frontend – Julián Mutchinick**
-- UI completa de la plataforma
-- Home, playlists, historial, navegación y UX
-- Reproductor musical
-- Perfiles de artista y usuario
-- Búsqueda unificada
-- Cola de reproducción
-
-### **Full Stack – Gonzalo Calderón**
-- Recuperación de contraseña
-- Validación de tokens y guards
-- Picks destacados, artistas relacionados
-- Feed social, compartir contenido
-- Subida de canciones
-- Monitoreo y fixes de checkpoint anterior
-
-### **Backend – Lucas Correa**
-- Desarrollo del microservicio **music-manager**
-- MongoDB + Firebase Storage
-- Creación de canciones, álbumes
-- Onboarding: géneros y artistas
-- Integración con BFF y melody-auth
-
-### **Backend – Gonzalo Toyos**
-- Sistema de followers
-- Colaboraciones
-- Actividades recientes
-- Playlists y carrusel de fotos
-- Backend del feed social
-
-### **Backend / Backoffice – Mateo Ibáñez**
-- Panel administrativo completo
-- Gestión avanzada de usuarios
-- Canciones populares, rankings, métricas
-- Búsqueda unificada
-- Sistema de likes
-- Tracking de reproducciones
+A continuación se detallan las soluciones desarrolladas internamente para la gestión integral del sistema:
 
 ---
 
-Este sitio reúne toda la documentación necesaria para comprender cómo está construido el proyecto y qué decisiones se tomaron.
+### 📊 Plataforma de Monitoreo Operativo
+
+Supervisión del desempeño de los auditores encargados de la revisión de material audiovisual.
+
+Incluye métricas de productividad, eficiencia, horas efectivas trabajadas, comparación interindividual y segmentación por cliente.
+
+[Acceder a la sección →](/herramientas/monitoreo-operativo)
+
+---
+
+### 📈 Plataforma de Seguimiento Recaudatorio y Judicial
+
+Sistema de control integral de actividad administrativa, productiva y judicial.
+
+Permite analizar evolución recaudatoria, estado procesal y desempeño general del cliente.
+
+[Acceder a la sección →](/herramientas/recaudatorio-judicial)
+
+---
+
+### 📦 Sistema de Seguimiento de Notificadores
+
+Herramienta de trazabilidad y control de la actividad territorial de notificadores.
+
+Incluye registro de entregas, validación de cumplimiento y métricas de rendimiento individual.
+
+[Acceder a la sección →](/herramientas/notificadores)
+
+---
+
+### ⚖ Dashboard de Juicios en Situación de Apremio
+
+Plataforma especializada en el monitoreo de causas judiciales en instancia de apremio.
+
+Incluye indicadores de recuperación, evolución por período y trazabilidad procesal.
+
+[Acceder a la sección →](/herramientas/apremios)
+
+---
+
+## Proyectos en Curso
+
+Actualmente se encuentran en desarrollo nuevas soluciones orientadas a ampliar la cobertura operativa y adaptar indicadores específicos según las necesidades de cada jurisdicción.
+
+Entre los proyectos activos se destacan:
+
+- Desarrollo de plataforma de monitoreo para nuevo cliente municipal.
+- Integración de nuevas fuentes de datos.
+- Automatización de reportes ejecutivos.
+- Optimización de métricas de productividad.
+
+---
+
+## Enfoque Institucional
+
+Nuestra propuesta combina:
+
+- Especialización técnica.
+- Desarrollo tecnológico propio.
+- Control basado en datos.
+- Adaptabilidad operativa.
+- Compromiso con la eficiencia y la transparencia.
+
+---
+
+© 2026 | Desarrollo tecnológico interno
