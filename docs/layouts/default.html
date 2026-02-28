@@ -1,1 +1,38 @@
-None
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="container">
+    <a href="/">Inicio</a>
+    <a href="/herramientas/monitoreo-operativo">Monitoreo Operativo</a>
+    <a href="/herramientas/recaudatorio-judicial">Recaudatorio</a>
+    <a href="/herramientas/notificadores">Notificadores</a>
+    <a href="/herramientas/apremios">Apremios</a>
+  </div>
+</nav>
+
+<main class="container content">
+  {{ content }}
+</main>
+
+<footer class="main-footer">
+  <div class="container">
+    <p>© 2026 | Desarrollo tecnológico propio</p>
+  </div>
+</footer>
+
+</body>
+</html>
