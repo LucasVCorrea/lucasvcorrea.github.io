@@ -95,7 +95,7 @@ Facilita la toma de decisiones estratégicas y mejora la eficiencia operativa me
 
   <div class="slides">
     <img src="{{ '/assets/img/Dashindex.png' | relative_url }}" alt="Dashboard principal">
-    <img src="docs/assets/img/Heatmap auditores.png" alt="Heatmap de Fiscalizadores">
+    <img src="{{ '/assets/img/Heatmap auditores.png' | relative_url }}" alt="Heatmap de Fiscalizadores">
     <img src="{{ '/assets/img/Perfil Auditor.png' | relative_url }}" alt="Perfil fiscalizador">
     <img src="{{ '/assets/img/Info Camaras.png' | relative_url }}" alt="Información de Cámaras">
     
