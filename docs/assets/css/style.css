@@ -222,21 +222,40 @@ hr {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+/* IMPORTANTE: mantener width 100% */
 .slides {
   display: flex;
   width: 100%;
   animation: slide 16s infinite;
 }
 
+/* Cada slide ocupa 100% */
+.slides a {
+  flex: 0 0 100%;
+  width: 100%;
+  display: block;
+}
+
 .slides img {
   width: 100%;
-  flex: 0 0 100%;
   height: 420px;
   object-fit: contain;
   background: #f4f6f9;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
 }
 
-/* Animación corregida */
+/* Zoom suave al pasar el mouse */
+.slides img:hover {
+  transform: scale(1.05);
+}
+
+/* Pausa el carrusel al pasar el mouse */
+.carousel:hover .slides {
+  animation-play-state: paused;
+}
+
+/* Animación */
 
 @keyframes slide {
   0%, 20% {
