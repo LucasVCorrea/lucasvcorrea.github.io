@@ -210,44 +210,52 @@ hr {
 /* CARRUSEL ESTABLE */
 /* ============================= */
 
+/* ============================= */
+/* CARRUSEL ESTABLE DEFINITIVO */
+/* ============================= */
+
 .carousel {
   max-width: 900px;
   margin: 40px auto;
-  overflow: hidden;                 /* CLAVE */
+  overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .slides {
   display: flex;
-  width: 400%;                      /* 4 imágenes */
+  width: 100%;
   animation: slide 16s infinite;
 }
 
 .slides img {
-  width: 100%;                      /* CLAVE */
-  flex: 0 0 100%;                   /* CLAVE */
-  height: 420px;                    /* Ajustá acá */
+  width: 100%;
+  flex: 0 0 100%;
+  height: 420px;
   object-fit: contain;
   background: #f4f6f9;
-  margin: 0;
-  border-radius: 0;
 }
 
-/* Animación automática */
+/* Animación corregida */
 
 @keyframes slide {
-  0% { transform: translateX(0%); }
-  24% { transform: translateX(0%); }
+  0%, 20% {
+    transform: translateX(0);
+  }
 
-  26% { transform: translateX(-100%); }
-  49% { transform: translateX(-100%); }
+  25%, 45% {
+    transform: translateX(-100%);
+  }
 
-  51% { transform: translateX(-200%); }
-  74% { transform: translateX(-200%); }
+  50%, 70% {
+    transform: translateX(-200%);
+  }
 
-  76% { transform: translateX(-300%); }
-  99% { transform: translateX(-300%); }
+  75%, 95% {
+    transform: translateX(-300%);
+  }
 
-  100% { transform: translateX(0%); }
+  100% {
+    transform: translateX(0);
+  }
 }
