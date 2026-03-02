@@ -219,7 +219,7 @@ hr {
 
 .slides {
   display: flex;
-  width: 300%;
+  width: 400%;
   animation: slide 15s infinite;
 }
 
@@ -234,10 +234,16 @@ hr {
 
 @keyframes slide {
   0% { transform: translateX(0%); }
-  33% { transform: translateX(0%); }
-  36% { transform: translateX(-100%); }
-  66% { transform: translateX(-100%); }
-  69% { transform: translateX(-200%); }
-  99% { transform: translateX(-200%); }
+  24% { transform: translateX(0%); }
+
+  26% { transform: translateX(-100%); }
+  49% { transform: translateX(-100%); }
+
+  51% { transform: translateX(-200%); }
+  74% { transform: translateX(-200%); }
+
+  76% { transform: translateX(-300%); }
+  99% { transform: translateX(-300%); }
+
   100% { transform: translateX(0%); }
 }
