@@ -207,23 +207,30 @@ hr {
 }
 
 /* ============================= */
-/* CARRUSEL */
+/* CARRUSEL ESTABLE */
 /* ============================= */
 
 .carousel {
-  max-width: 900px;      /* ancho máximo */
-  margin: 40px auto;     /* lo centra */
+  max-width: 900px;
+  margin: 40px auto;
+  overflow: hidden;                 /* CLAVE */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .slides {
   display: flex;
-  width: 400%;
-  animation: slide 15s infinite;
+  width: 400%;                      /* 4 imágenes */
+  animation: slide 16s infinite;
 }
 
 .slides img {
-  height: 400px;         /* altura fija */
-  object-fit: cover;     /* recorta proporcional */
+  width: 100%;                      /* CLAVE */
+  flex: 0 0 100%;                   /* CLAVE */
+  height: 420px;                    /* Ajustá acá */
+  object-fit: cover;
+  margin: 0;
+  border-radius: 0;
 }
 
 /* Animación automática */
