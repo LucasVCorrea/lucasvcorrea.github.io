@@ -34,7 +34,7 @@ A continuación se detallan las plataformas desarrolladas internamente por el eq
     Dashboard dedicado al seguimiento de actividad recaudatoria, administrativa y judicial.
   </p>
 
-  <a class="tool-link" href="/herramientas/recaudatorio-judicial">Ver detalle →</a>
+  <a class="tool-link" href="/herramientas/berys">Ver detalle →</a>
 </div>
 
 ---
