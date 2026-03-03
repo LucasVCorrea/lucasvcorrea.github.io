@@ -90,7 +90,7 @@ Facilita la toma de decisiones mediante indicadores claros, métricas comparativ
 
 <div class="carousel">
   <div class="slides">
-    <img src="{{ '/assets/img/Beryindex.png' | relative_url }}" alt="Dashboard principal">
+    <img src="{{ '/assets/img/BeryIndex.png' | relative_url }}" alt="Dashboard principal">
     <img src="{{ '/assets/img/PaymentsBerys.png' | relative_url }}" alt="Pagos">
     <img src="{{ '/assets/img/LotesBerys.png' | relative_url }}" alt="Lotes Notificaciones">
   </div>
