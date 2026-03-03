@@ -4,7 +4,7 @@ title: S.I.R.A.B
 ---
 
 <div class="tool-hero">
-  <h1>S.I.R.A.B</h1>
+  <h1>Dashboard de Actividad De Berisso</h1>
   <p class="tool-subtitle">
     Sistema Integral de Recaudación y Análisis para el Municipio de Berisso.
   </p>
