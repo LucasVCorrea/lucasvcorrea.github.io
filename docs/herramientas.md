@@ -49,7 +49,7 @@ A continuación se detallan las plataformas desarrolladas internamente por el eq
     Sistema de Seguimiento de Notificaciones y control de actividad por Notificador contratado.
   </p>
 
-  <a class="tool-link" href="/herramientas/notificadores">Ver detalle →</a>
+  <a class="tool-link" href="/herramientas/sigae">Ver detalle →</a>
 </div>
 
 ---
