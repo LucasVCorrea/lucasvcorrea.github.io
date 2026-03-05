@@ -103,3 +103,52 @@ El sistema integra métricas operativas, estadísticas comparativas y consultas 
 <p>Información consolidada para planificación jurídica y administrativa.</p>
 
 </div>
+
+## Vista del Producto
+
+<div class="carousel">
+  <div class="slides">
+    <img src="{{ '/assets/img/Dashindex.png' | relative_url }}" alt="Dashboard principal">
+    <img src="{{ '/assets/img/Heatmap auditores.png' | relative_url }}" alt="Heatmap de Fiscalizadores">
+    <img src="{{ '/assets/img/Perfil Auditor.png' | relative_url }}" alt="Perfil fiscalizador">
+    <img src="{{ '/assets/img/Info Camaras.png' | relative_url }}" alt="Información de Camaras">
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img">
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const images = document.querySelectorAll(".slides img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.querySelector(".lightbox-img");
+  const closeBtn = document.querySelector(".close");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.style.display = "none";
+  }
+
+  closeBtn.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target !== lightboxImg) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeLightbox();
+    }
