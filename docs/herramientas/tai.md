@@ -108,10 +108,10 @@ El sistema integra métricas operativas, estadísticas comparativas y consultas 
 
 <div class="carousel">
   <div class="slides">
-    <img src="{{ '/assets/img/Dashindex.png' | relative_url }}" alt="Dashboard principal">
-    <img src="{{ '/assets/img/Heatmap auditores.png' | relative_url }}" alt="Heatmap de Fiscalizadores">
-    <img src="{{ '/assets/img/Perfil Auditor.png' | relative_url }}" alt="Perfil fiscalizador">
-    <img src="{{ '/assets/img/Info Camaras.png' | relative_url }}" alt="Información de Camaras">
+    <img src="{{ '/assets/img/TAIlogin.png' | relative_url }}" alt="Login">
+    <img src="{{ '/assets/img/TAIindex.png' | relative_url }}" alt="Pagina principal">
+    <img src="{{ '/assets/img/TAIquery.png' | relative_url }}" alt="Consulta detallada">
+    <img src="{{ '/assets/img/TAIreceipt.png' | relative_url }}" alt="Recibos">
   </div>
 </div>
 
