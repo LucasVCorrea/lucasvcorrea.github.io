@@ -64,5 +64,5 @@ A continuación se detallan las plataformas desarrolladas internamente por el eq
     Monitoreo de causas judiciales en instancia avanzada.
   </p>
 
-  <a class="tool-link" href="/herramientas/apremios">Ver detalle →</a>
+  <a class="tool-link" href="/herramientas/tai">Ver detalle →</a>
 </div>
